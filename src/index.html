@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montez&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="m-0 p-0 font-medium box-border">
+      <div class="w-full h-screen bg-toDoBg bg-cover p-2">
+        <div
+          class="w-full max-w-lg m-24 bg-white mx-auto mt-24 mb-5 pt-10 px-9 pb-16 rounded-lg"
+        >
+          <h2
+            class="text-blue-950 flex items-center mb-5 font-[Montez] text-3xl"
+          >
+            To Do List
+          </h2>
+          <div
+            class="flex items-center justify-between bg-slate-200 rounded-3xl pl-5 mb-6"
+          >
+            <input
+              class="flex-1 border-none outline-none bg-transparent p-2 font-[14px]"
+              id="input-box"
+              type="text"
+              placeholder="Add task"
+            />
+            <button
+              onclick="addTask()"
+              class="border-none outline-none py-4 px-12 text-white bg-[#a69b8d] hover:bg-[#8a7862] text-base cursor-pointer rounded-3xl"
+            >
+              Add
+            </button>
+          </div>
+          <ul
+            id="list-container"
+            class="list-none font-{17px} py-3 pr-2 pl-12 cursor-pointer select-none"
+          >
+            <!-- <li>Task 1</li>
+                    <li>Task 2</li> 
+                    <li>Task 3</li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
