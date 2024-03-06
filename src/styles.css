@@ -5,7 +5,7 @@
 
 .one
 {
-    @apply  right-0 top-1 w-10 h-10 text-xl text-[#555] text-center hover:bg-[#edeef0] rounded-full
+    @apply  w-8 h-8 text-xl text-[#555] text-center hover:bg-[#edeef0] rounded-full
 }
 .two
 {

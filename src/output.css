@@ -627,6 +627,11 @@ video {
   border-style: none;
 }
 
+.bg-\[\#8a7862\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(138 120 98 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#a69b8d\] {
   --tw-bg-opacity: 1;
   background-color: rgb(166 155 141 / var(--tw-bg-opacity));
@@ -644,6 +649,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.\!bg-\[\#8a7862\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(138 120 98 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-toDoBg {
@@ -740,10 +750,8 @@ video {
 }
 
 .one {
-  right: 0px;
-  top: 0.25rem;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: 9999px;
   text-align: center;
   font-size: 1.25rem;
