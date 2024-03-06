@@ -627,37 +627,27 @@ video {
   border-style: none;
 }
 
-.bg-\[\#8a7862\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(138 120 98 / var(--tw-bg-opacity));
+.\!bg-\[\#e675d0\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(230 117 208 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-\[\#a69b8d\] {
+.bg-\[\#e8a5db\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(166 155 141 / var(--tw-bg-opacity));
+  background-color: rgb(232 165 219 / var(--tw-bg-opacity));
 }
 
-.bg-slate-200 {
+.bg-\[\#fffacd\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  background-color: rgb(255 250 205 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
   background-color: transparent;
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.\!bg-\[\#8a7862\] {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(138 120 98 / var(--tw-bg-opacity)) !important;
-}
-
 .bg-toDoBg {
-  background-image: url('ToDoBg.jpg');
+  background-image: url('../src/images/bg-image.jpg');
 }
 
 .bg-cover {
@@ -758,11 +748,15 @@ video {
   line-height: 1.75rem;
   --tw-text-opacity: 1;
   color: rgb(85 85 85 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .one:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 238 240 / var(--tw-bg-opacity));
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .two {
@@ -771,7 +765,15 @@ video {
   padding-left: 0.25rem;
 }
 
-.hover\:bg-\[\#8a7862\]:hover {
+.card{
+  background: rgba( 255, 255, 255, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 1.5px );
+  -webkit-backdrop-filter: blur( 1.5px );
+  border-radius: 10px;
+}
+
+.hover\:bg-\[\#e675d0\]:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(138 120 98 / var(--tw-bg-opacity));
-}  
+  background-color: rgb(230 117 208 / var(--tw-bg-opacity));
+}
